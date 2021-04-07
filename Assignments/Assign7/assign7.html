@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="S4.CSS">
+    
+</head>
+<body>
+    <div class="bo">
+    <div class="container">
+        
+        <div class="form">
+            <h2>SIGNUP FORM</h2>
+            <form name="val" id="my" action="" method="POST">
+            <p>Email</p>
+            <input type="email" name="mail" id="mail" placeholder=" Enter Email" onfocus="this.placeholder = ''">
+            <p>Password</p>
+            <input type="password" name="p" id="p" placeholder=" Enter Password" onfocus="this.placeholder = ''">
+            <p>Repeat Password</p>
+            <input type="password" name="rp" id="rp" placeholder=" Repeat Password" onfocus="this.placeholder = ''">
+            <div class="ra"><input type="checkbox" name="radio" id="rad" value="agree"> Remember Me</div>
+            <p>To create an account you have to agree to our <a href="">Terms & Privacy.</a></p>
+            <div class="btn">
+                <button type="reset" value="Cancel" id="cancel">CANCEL</button><button type="submit" id="submit" value="Sign Up" onclick="isCheck()">SIGN UP</button>
+            </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script>
+    function isCheck()
+{
+var a=document.getElementById("my").elements.item(1).value;
+var b=document.getElementById("my").elements.item(2).value;
+if(a!=b){
+    alert("OOPS!!...PASSWORD MISMATCH");
+}
+else{
+    alert("SUCCESS");
+}
+};
+</script>
+</body>
+</html>

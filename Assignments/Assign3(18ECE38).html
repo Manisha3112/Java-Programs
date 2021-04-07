@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assign3</title>
+</head>
+
+    <style>
+        body{
+        background-color: rgb(93, 209, 248);
+        }
+         div { 
+            background-color: rgb(249, 254, 255);
+            width: 70%;
+            height: max-content;
+            
+        }
+       
+        th,td{
+            padding-bottom: 10px;
+            padding-right: 10px;
+            padding-top: 20px;
+            padding-left: 20px;
+        }
+        th{
+            text-align: right;
+        }
+    </style>
+    <body>
+          
+            
+    <center><div>
+        <br>
+    <center><h3>Tell us something positive that happened to you today.</h3>
+    <table>
+        <tr>
+            <th>Name</th>
+            <td><input type="text" placeholder="Enter your name" name="name" style="width: 250px;"></td>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <td><input type="email" placeholder="Enter your email address" name="email" style="width: 250px;"></td>
+        </tr>
+        <tr>
+            <th>On a scale of 1-10,how good was it?</th>
+            <td><input type="number" placeholder="Enter a number between 1-10" name="number" min="1" max="10"style="width: 250px;"></td>
+        </tr>
+        <tr>
+            <th>Where did it happen?</th>
+            <td><select style="width:100px">
+            <option>At Home</option>
+        <option>At office</option></select></td>
+        </tr>
+        <tr>
+            <th>At what time of day it happen?</th>
+           <td> <input type="radio" name="name" value="Excited">Morning<br>
+            <input type="radio" name="name" value="humbled">Aternoon<br>
+            <input type="radio" name="name" value="loved">Evening<br>
+        </td>
+        </tr>
+        <tr>
+            <th>What emotion did you experience?<br>(Select all that apply)</th>
+           <td> <input type="checkbox" name="name" value="Excited">Excited<br>
+            <input type="checkbox" name="name" value="humbled">Humbled<br>
+            <input type="checkbox" name="name" value="elated">Elated<br>
+            <input type="checkbox" name="name" value="loved">Loved<br>
+            <input type="checkbox" name="name" value="Enthusiastic">Enthusiastic<br></td>
+        </tr>
+        <tr>
+            <th>Please describe your positive experience</th>
+            <td><textarea placeholder="Enter your experience here..." rows="4" style="width:300px"></textarea></td>
+        </tr>
+    </table><br>
+    <input type="submit" style="color:rgb(239, 246, 248); background-color:rgb(53, 141, 170);">
+</center><br></div></center>
+    
+
+</div>
+</body>
+</html>
